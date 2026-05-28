@@ -15,12 +15,18 @@ function App() {
   },[item])
 
   return (
-    <>
+    <div className="app">
       <h1>HTTP Requests</h1>
-      {item?.carts?.map((cart) => (
-        <p key={cart.id}>{cart.products[0].title}</p>
-      ))}
-    </>
+      <div className="cards">
+        {item?.carts?.map((cart) => (
+          <article className="card" key={cart.id}>
+            <h2>Carrinho {cart.id}</h2>
+            <p>Produtos: {cart.products.length}</p>
+            <p className="product-title">{cart.products[0].title}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   )
 }
 

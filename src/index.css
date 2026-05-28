@@ -3,3 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+#root,
+.app {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  text-align: center;
+  color: #111827;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.product-title {
+  font-weight: 700;
+  color: #2563eb;
+}
